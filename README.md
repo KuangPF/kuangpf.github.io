@@ -4,4 +4,4 @@
 > 或许是一个假的`vue`粉
 
 ### home
-[KuangPF](https://kuangpf.github.io/)
+[KuangPF](https://kuangpf.com/)
