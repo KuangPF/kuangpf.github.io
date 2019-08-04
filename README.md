@@ -1,2 +1,6 @@
-# [kuangpf.com](https://kuangpf.com/)
-> Personal website of KuangPF
+Personal website of KuangPF
+===========================
+
+The site is:
+
+  https://kuangpf.com
