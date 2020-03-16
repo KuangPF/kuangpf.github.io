@@ -1,115 +1,117 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>KuangPF-匡鹏飞</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link
+      rel="icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPkAAAD3CAMAAADomwLSAAAAWlBMVEX///8AAACjo6MvLy9nZ2d/f3/v7+8QEBD19fXf39++vr4kJCSwsLDPz88fHx9AQEDU1NRgYGA/Pz/q6up4eHhVVVXIyMiWlpaPj49wcHBOTk6fn5+Hh4cxMTH1X8TMAAAEHElEQVR42uyd227UQBBE244Xxh4TjK+wbP7/N5GXBxSJMLdGmmrX+YBIR8rUbo2710IIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEWGLontybvyPxjN2T1+ZjXqUi2uYPReZTE+aLVISWuZvD4j+lJrTM17D4N6kKJfMxLP7ySapCx7z3QfHPVR1yNfOtCTJKZaiYH2HxH1IbGuZTxCGX6lAwdxGHvLJ0UzJfmyCD1Ee5+RgWv0mFhM3LP9C+So2UmrstKP5a4SFXMD/Aeoqa+R4W/y51UmbuPFpP0TLv4HqKkvmI11N0zHu0ywgtc7cB9hQV8wOxp2iY7+FD3kvFZJsvHrKnKJh3mD2l3LwF7SnF5j1qTyk1dzNqTyk1f8D2lELzHbenlJkvHrenlJl3wD2lyLxF7ikl5hN0TykwdzN0TykwX7F7Sr75AN5Tss0XD95Tss039J6Sa97C95RM8wm/p+SZuxm/p+SZrwZ6Spb5aKGn5Jj33kJPyTHfTPSUDPPDRk9JN5+M9JRkc+eN9JRk89VKT0k1H830lETz3pvpKWnmbrPTU9LMD0M9Jcl8t9RTUsydt9RTUsxXUz0lwXy31VPizZ231VPizVdjPSXafLfWU6LNvbWeEmcOuISmYw66n6JgDj/39f/MgQ/5P83h1qr1zDEX8DTMIbdNdcxx95KKzSE3bVPMrxlyp/k1Qy7KHOXHcdLNL/kNNmQOvqYTMC/jLpic5tcMudP8miF3ml8z5E7za4bcaX7NkDvNrxlyUeb4a3kfmF8z5N6ZX+pOLtL8zd49bJz5fbH30CHK/OWTqZn+ePPzEbmbrYVcG/v0bLAWcm30J1ZnLOTa6K+mvbGQa+MXFQ5bd9Bt/ACQ86ZG3NuE/+DR0tJWyPxmdUMxdVPPxs59hrmshkIuzXwxFHJp5tLaCblEc5nNhFyq+W5mmiDVXDorIZdsvliZJkg2l8PIHXS6ufM2RqbSzWWwEXJhc6shl2M+mQi5HHN5WAi5sLnVkMsyl9bAg7Y8c5nxpwkyzSf8aYJMc1nhQy7XfIEfmQqbWw25bHOHHnLZ5jKAh1y+uXTYIVdg3mOHXIG5HNAhV2LuPPI0QYm5jMirq0XmsgFPE5SZT8BzoWXm8sANuULzBTfkIs0Nvpel1Fxm1JArNt9RQ67YXDrQtxeUmy8N5jRB2NxqyKm8CxtyZErBXAbI3yYIm1sNORXzCTHkVMzlARhyYXOrIadjLiNeyCmZyww3TaBlPjVod9Ba5rI2YNMEauZLAzYypWYuLVjI6Zk7sJDTM5cdK+QUzaWDCjlN8x4q5DTN5UAKOVVz54GmCYbuyfbynvvtNzp/7eTt9qTaRy6EEEIIIYQQQgghhBBCCCGEEEIIIYQQQggh5NdGwSigBgAAq9I6m7R1n3oAAAAASUVORK5CYII="
+      type="image/x-icon"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css" />
+    <style>
+      html,
+      body {
+        overflow: hidden;
+        margin: 0;
+      }
 
-<head>
-  <title>KuangPF-匡鹏飞</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPkAAAD3CAMAAADomwLSAAAAWlBMVEX///8AAACjo6MvLy9nZ2d/f3/v7+8QEBD19fXf39++vr4kJCSwsLDPz88fHx9AQEDU1NRgYGA/Pz/q6up4eHhVVVXIyMiWlpaPj49wcHBOTk6fn5+Hh4cxMTH1X8TMAAAEHElEQVR42uyd227UQBBE244Xxh4TjK+wbP7/N5GXBxSJMLdGmmrX+YBIR8rUbo2710IIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEWGLontybvyPxjN2T1+ZjXqUi2uYPReZTE+aLVISWuZvD4j+lJrTM17D4N6kKJfMxLP7ySapCx7z3QfHPVR1yNfOtCTJKZaiYH2HxH1IbGuZTxCGX6lAwdxGHvLJ0UzJfmyCD1Ee5+RgWv0mFhM3LP9C+So2UmrstKP5a4SFXMD/Aeoqa+R4W/y51UmbuPFpP0TLv4HqKkvmI11N0zHu0ywgtc7cB9hQV8wOxp2iY7+FD3kvFZJsvHrKnKJh3mD2l3LwF7SnF5j1qTyk1dzNqTyk1f8D2lELzHbenlJkvHrenlJl3wD2lyLxF7ikl5hN0TykwdzN0TykwX7F7Sr75AN5Tss0XD95Tss039J6Sa97C95RM8wm/p+SZuxm/p+SZrwZ6Spb5aKGn5Jj33kJPyTHfTPSUDPPDRk9JN5+M9JRkc+eN9JRk89VKT0k1H830lETz3pvpKWnmbrPTU9LMD0M9Jcl8t9RTUsydt9RTUsxXUz0lwXy31VPizZ231VPizVdjPSXafLfWU6LNvbWeEmcOuISmYw66n6JgDj/39f/MgQ/5P83h1qr1zDEX8DTMIbdNdcxx95KKzSE3bVPMrxlyp/k1Qy7KHOXHcdLNL/kNNmQOvqYTMC/jLpic5tcMudP8miF3ml8z5E7za4bcaX7NkDvNrxlyUeb4a3kfmF8z5N6ZX+pOLtL8zd49bJz5fbH30CHK/OWTqZn+ePPzEbmbrYVcG/v0bLAWcm30J1ZnLOTa6K+mvbGQa+MXFQ5bd9Bt/ACQ86ZG3NuE/+DR0tJWyPxmdUMxdVPPxs59hrmshkIuzXwxFHJp5tLaCblEc5nNhFyq+W5mmiDVXDorIZdsvliZJkg2l8PIHXS6ufM2RqbSzWWwEXJhc6shl2M+mQi5HHN5WAi5sLnVkMsyl9bAg7Y8c5nxpwkyzSf8aYJMc1nhQy7XfIEfmQqbWw25bHOHHnLZ5jKAh1y+uXTYIVdg3mOHXIG5HNAhV2LuPPI0QYm5jMirq0XmsgFPE5SZT8BzoWXm8sANuULzBTfkIs0Nvpel1Fxm1JArNt9RQ67YXDrQtxeUmy8N5jRB2NxqyKm8CxtyZErBXAbI3yYIm1sNORXzCTHkVMzlARhyYXOrIadjLiNeyCmZyww3TaBlPjVod9Ba5rI2YNMEauZLAzYypWYuLVjI6Zk7sJDTM5cdK+QUzaWDCjlN8x4q5DTN5UAKOVVz54GmCYbuyfbynvvtNzp/7eTt9qTaRy6EEEIIIYQQQgghhBBCCCGEEEIIIYQQQggh5NdGwSigBgAAq9I6m7R1n3oAAAAASUVORK5CYII="
-    type="image/x-icon">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700' rel='stylesheet' type='text/css'>
-  <style>
-    html,
-    body {
-      overflow: hidden;
-      margin: 0;
-    }
+      body {
+        font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+        color: #333;
+      }
 
-    body {
-      font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
-      color: #333;
-    }
+      #wrapper {
+        position: absolute;
+        left: 0;
+        width: 320px;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        margin-left: -160px;
+        margin-top: -160px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      h1 {
+        font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 9px;
+        text-transform: uppercase;
+        margin: 12px 0;
+        left: 4px;
+        color: #111;
+      }
 
-    #wrapper {
-      position: absolute;
-      left: 0;
-      width: 320px;
-      text-align: center;
-      top: 50%;
-      left: 50%;
-      margin-left: -160px;
-      margin-top: -160px;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-    h1 {
-      font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-      font-weight: 700;
-      font-size: 30px;
-      letter-spacing: 9px;
-      text-transform: uppercase;
-      margin: 12px 0;
-      left: 4px;
-      color: #111;
-    }
+      h2 {
+        color: #4a4a4a;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 0.12em;
+        margin-bottom: 30px;
+        left: 3px;
+      }
 
-    h2 {
-      color: #4a4a4a;
-      font-weight: normal;
-      font-size: 15px;
-      letter-spacing: .12em;
-      margin-bottom: 30px;
-      left: 3px;
-    }
+      h1,
+      h2 {
+        position: relative;
+      }
 
-    h1,
-    h2 {
-      position: relative;
-    }
+      p {
+        font-size: 14px;
+        line-height: 2em;
+        margin: 0;
+        letter-spacing: 2px;
+      }
 
-    p {
-      font-size: 14px;
-      line-height: 2em;
-      margin: 0;
-      letter-spacing: 2px;
-    }
+      a {
+        color: #4a4a4a;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
 
-    a {
-      color: #4a4a4a;
-      text-decoration: none;
-      transition: color .2s ease;
-    }
+      a:hover {
+        /* color: #f33; */
+        color: rgba(79, 192, 141, 1);
+      }
 
-    a:hover {
-      color: #f33;
-    }
+      .beian {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        font-size: 13px;
+        visibility: hidden;
+      }
+    </style>
+  </head>
 
-    .beian {
-      position: absolute;
-      bottom: 15px;
-      left: 0;
-      right: 0;
-      margin: auto;
-      text-align: center;
-      font-size: 13px;
-      visibility: hidden;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="wrapper">
-    <h1>Kuang PF</h1>
-    <h2>Front-End Developer</h2>
-    <p>
-      <a href="https://github.com/KuangPF" target="_blank">Github</a>
-    </p>
-    <p>
-      <a href="https://kuangpf.com/blog/" target="_blank">Blog</a>
-    </p>
-    <p>
-      <a href="https://juejin.im/user/5aa91ff16fb9a028b77a8474" target="_blank">掘金</a>
-    </p>
-    <p>
-      <a href="mailto:kuangpf1995@gmail.com" target="_blank">Mail</a>
-    </p>
-  </div>
-  <div class="beian">
-    <a href="http://www.miitbeian.gov.cn/" target="_blank">渝ICP备18003486号-1</a>
-    <span>|</span>
-    <a href="https://www.beian.gov.cn/portal/index" target="_blank">渝公网安备50019002501367号</a>
-  </div>
-</body>
-
+  <body>
+    <div id="wrapper">
+      <h1>Kuang PF</h1>
+      <h2>Front-End Developer</h2>
+      <p>
+        <a href="https://github.com/KuangPF" target="_blank">Github</a>
+      </p>
+      <p>
+        <a href="https://kuangpf.com/blog/" target="_blank">Blog</a>
+      </p>
+      <p>
+        <a href="https://juejin.im/user/5aa91ff16fb9a028b77a8474" target="_blank">掘金</a>
+      </p>
+      <p>
+        <a href="mailto:kuangpf1995@gmail.com" target="_blank">Mail</a>
+      </p>
+    </div>
+    <div class="beian">
+      <a href="http://www.miitbeian.gov.cn/" target="_blank">渝ICP备18003486号-1</a>
+      <span>|</span>
+      <a href="https://www.beian.gov.cn/portal/index" target="_blank">渝公网安备50019002501367号</a>
+    </div>
+  </body>
 </html>
