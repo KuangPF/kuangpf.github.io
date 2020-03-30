@@ -1,12 +1,27 @@
 html,
 body {
   overflow: hidden;
+  height: 100%;
   margin: 0;
 }
 
+/* css variable */
+body.light {
+  --bg: #fff;
+  --textName: #111;
+  --textNormal: #4a4a4a;
+  --textLink: rgba(79, 192, 141, 1);
+}
+body.dark {
+  --bg: #282c35;
+  --textName: #fff;
+  --textNormal: rgba(255, 255, 255, 0.88);
+  --textLink: rgba(255, 167, 196, 1);
+}
 body {
   font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
-  color: #333;
+  background-color: var(--bg);
+  transition: color 0.2s ease-out, background 0.2s ease-out;
 }
 
 #wrapper {
@@ -30,11 +45,11 @@ h1 {
   text-transform: uppercase;
   margin: 12px 0;
   left: 4px;
-  color: #111;
+  color: var(--textName);
 }
 
 h2 {
-  color: #4a4a4a;
+  color: var(--textNormal);
   font-weight: normal;
   font-size: 15px;
   letter-spacing: 0.12em;
@@ -55,14 +70,14 @@ p {
 }
 
 a {
-  color: #4a4a4a;
+  color: var(--textNormal);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
   /* color: #f33; */
-  color: rgba(79, 192, 141, 1);
+  color: var(--textLink);
 }
 
 .beian {
